@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div id="videos" class="mb-3 mt-3 justify-content-md-center">
+            <div id="video-wrapper">
+                <!-- <div id="waiting" class="btn btn-warning">Waiting for answer...</div> -->
+                <video class="video-player" id="local-video" autoplay playsinline controls></video>
+            </div>
+            <video class="video-player" id="remote-video" autoplay playsinline controls></video>
+        </div>
+        <button id="new-room" class="btn btn-primary mb-3">New Room</button>
+        <div class="mb-3">
+            <div id="user-name"></div>
+            <div id="current-room">Current Room: <span id="room-id"></span></div>
+        </div>
+
+        <div class="row">
+            <div id="room-list" class="col-12">
+                <h3>Available Rooms</h3>
+                <ul id="rooms" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='dist/index.js' type="module"></script>
+</html>
